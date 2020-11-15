@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .imageColumn {
+           float: left;
+           width: 50%;
+           padding: 10px;
+        }
+</style>
+</head>
+<body>
+    <img src="data:image/jpeg;base64,{{ image1 }}" alt="Picture 1" >
+    <img src="data:image/jpeg;base64,{{ image2 }}" alt="Picture 2" ><br>
+    <form action="http://localhost:5000/post_field"  method="POST">
+        <input type="number" name="guessed_value" placeholder="Enter guessed number...">
+        <input type="submit" value="Next Number">
+    </form>
+</body>
+</html>
+
+<!-- <img src="data:image/jpeg;base64,{{ image }}" alt="img_data"  id="imgslot"/>      -->
